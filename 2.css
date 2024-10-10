@@ -1,0 +1,80 @@
+* General Styling */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+}
+
+body {
+    min-height: 200vh; /* For scroll demonstration */
+}
+
+/* Fixed Navigation Menu Styling */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #4CAF50; /* Initial background color (Green) */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    padding: 10px 0; /* Added padding for better spacing */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust this for spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Text color (White) */
+    font-size: 18px;
+    padding: 15px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect with different colors */
+nav ul li a:hover {
+    background-color: #FF6347; /* Background changes to Tomato color on hover */
+    color: #000000; /* Text changes to Black on hover */
+}
+
+/* Sections Styling */
+section {
+    padding: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #e0f7fa; /* Light Cyan */
+}
+
+#services {
+    background-color: #ffe0b2; /* Light Orange */
+}
+
+#contact {
+    background-color: #e1bee7; /* Light Purple */
+}
+
+/* Change color of the navbar when scrolled */
+.scrolled {
+    background-color: #1E90FF; /* Dodger Blue when scrolled */
+}
